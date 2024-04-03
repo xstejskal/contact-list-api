@@ -4,8 +4,716 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13630f98e82024ad3952aa0e0b23cfdd",
+    "content-hash": "a8fba056830642df2d8e439628acaa23",
     "packages": [
+        {
+            "name": "dibi/dibi",
+            "version": "v5.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dg/dibi.git",
+                "reference": "86a71dde28fd1c1b55e4c66a6f7ebfd4efb13e1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dg/dibi/zipball/86a71dde28fd1c1b55e4c66a6f7ebfd4efb13e1d",
+                "reference": "86a71dde28fd1c1b55e4c66a6f7ebfd4efb13e1d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "8.0 - 8.3"
+            },
+            "replace": {
+                "dg/dibi": "*"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "^1.0",
+                "nette/di": "^3.1",
+                "nette/tester": "^2.5",
+                "phpstan/phpstan": "^1.0",
+                "tracy/tracy": "^2.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                }
+            ],
+            "description": "Dibi is Database Abstraction Library for PHP",
+            "homepage": "https://dibiphp.com",
+            "keywords": [
+                "access",
+                "database",
+                "dbal",
+                "mssql",
+                "mysql",
+                "odbc",
+                "oracle",
+                "pdo",
+                "postgresql",
+                "sqlite",
+                "sqlsrv"
+            ],
+            "support": {
+                "issues": "https://github.com/dg/dibi/issues",
+                "source": "https://github.com/dg/dibi/tree/v5.0.1"
+            },
+            "time": "2023-11-25T13:08:47+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "2.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "45b30f99ac27b5ca93cb4831afe16285f57b8221"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/45b30f99ac27b5ca93cb4831afe16285f57b8221",
+                "reference": "45b30f99ac27b5ca93cb4831afe16285f57b8221",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.1 || ^2.0",
+                "ralouphie/getallheaders": "^3.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.8.2",
+                "http-interop/http-factory-tests": "^0.9",
+                "phpunit/phpunit": "^8.5.36 || ^9.6.15"
+            },
+            "suggest": {
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
+            },
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/2.6.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-12-03T20:05:35+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator",
+            "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator.git",
+                "reference": "78069297203e711ff585d2d821ddd71bfb997c13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator/zipball/78069297203e711ff585d2d821ddd71bfb997c13",
+                "reference": "78069297203e711ff585d2d821ddd71bfb997c13",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "infinityloop-dev/graphpinator-common": "^2.0",
+                "infinityloop-dev/graphpinator-parser": "^1.2",
+                "infinityloop-dev/utils": "^2.3",
+                "php": ">=8.1",
+                "psr/http-message": "^2.0",
+                "psr/log": "^3.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "suggest": {
+                "infinityloop-dev/graphpinator-constraint-directives": "Directives for additional value validation.",
+                "infinityloop-dev/graphpinator-extra-types": "Commonly used types, both scalar or composite.",
+                "infinityloop-dev/graphpinator-nette": "Adapters for Nette framework.",
+                "infinityloop-dev/graphpinator-persisted-queries": "Module to persist validated query in cache and improve performace of repeating queries.",
+                "infinityloop-dev/graphpinator-printer": "Schema printing in GraphQL language.",
+                "infinityloop-dev/graphpinator-query-cost": "Modules to limit query cost by restricting maximum depth or number of nodes.",
+                "infinityloop-dev/graphpinator-upload": "Module to handle multipart formdata requests.",
+                "infinityloop-dev/graphpinator-where-directives": "Directives for filtering list values."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Easy-to-use & Fast GraphQL server implementation for PHP.",
+            "homepage": "https://github.com/graphpql/",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator/issues",
+                "source": "https://github.com/graphpql/graphpinator/tree/v1.7.1"
+            },
+            "time": "2023-11-13T10:04:38+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator-common",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator-common.git",
+                "reference": "fbe087fb00cdd023b3c584cd6bf403c77d0fd5be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-common/zipball/fbe087fb00cdd023b3c584cd6bf403c77d0fd5be",
+                "reference": "fbe087fb00cdd023b3c584cd6bf403c77d0fd5be",
+                "shasum": ""
+            },
+            "require": {
+                "infinityloop-dev/utils": "^2.3",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Common structures for GraPHPinator: GraphQL server implementation for PHP.",
+            "homepage": "https://www.infinityloop.dev/",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator-common/issues",
+                "source": "https://github.com/graphpql/graphpinator-common/tree/v2.0"
+            },
+            "time": "2023-11-10T12:38:41+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator-constraint-directives",
+            "version": "v1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator-constraint-directives.git",
+                "reference": "c70f3c47af97f9eabc2a06b7c65ad5f711a9c118"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-constraint-directives/zipball/c70f3c47af97f9eabc2a06b7c65ad5f711a9c118",
+                "reference": "c70f3c47af97f9eabc2a06b7c65ad5f711a9c118",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "infinityloop-dev/graphpinator": "^1.6",
+                "infinityloop-dev/utils": "^2.3",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "infinityloop-dev/graphpinator-upload": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "suggest": {
+                "infinityloop-dev/graphpinator-upload": "Combine Upload type and uploadConstraint directive."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\ConstraintDirectives\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Typesystem directives to declare additional validation on top of GraphQL type system.",
+            "homepage": "https://github.com/graphpql/",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator-constraint-directives/issues",
+                "source": "https://github.com/graphpql/graphpinator-constraint-directives/tree/v1.3.2"
+            },
+            "time": "2023-11-10T18:09:52+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator-extra-types",
+            "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator-extra-types.git",
+                "reference": "6384da3f2ff3f14a73541105d99a233ffbc25d9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-extra-types/zipball/6384da3f2ff3f14a73541105d99a233ffbc25d9e",
+                "reference": "6384da3f2ff3f14a73541105d99a233ffbc25d9e",
+                "shasum": ""
+            },
+            "require": {
+                "infinityloop-dev/graphpinator": "^1.6",
+                "infinityloop-dev/graphpinator-constraint-directives": "^1.2",
+                "infinityloop-dev/utils": "^2.3"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\ExtraTypes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Some useful and commonly used types, both scalar or composite.",
+            "homepage": "https://github.com/graphpql/",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator-extra-types/issues",
+                "source": "https://github.com/graphpql/graphpinator-extra-types/tree/v1.7.1"
+            },
+            "time": "2023-11-28T12:07:59+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator-nette",
+            "version": "v1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator-nette.git",
+                "reference": "2f95e2ecbf55bf8141ad828d56aeb62fb6fe4c88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-nette/zipball/2f95e2ecbf55bf8141ad828d56aeb62fb6fe4c88",
+                "reference": "2f95e2ecbf55bf8141ad828d56aeb62fb6fe4c88",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/psr7": "^2.4.3",
+                "infinityloop-dev/graphpinator": "^1.1",
+                "infinityloop-dev/graphpinator-printer": "^1.0",
+                "latte/latte": "^2.10.8 || ^3.0",
+                "nette/application": "^3.0",
+                "nette/caching": "^3.0",
+                "nette/http": "^3.0",
+                "psr/simple-cache": "3.0",
+                "tracy/tracy": "^2.7"
+            },
+            "require-dev": {
+                "infection/infection": "^0.25",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "infinityloop-dev/graphpinator-persisted-queries": "^1.0",
+                "infinityloop-dev/graphpinator-upload": "^1.0",
+                "phpstan/phpstan": "^1.0",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\Nette\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com"
+                }
+            ],
+            "description": "Graphpinator adapters and addons for Nette framework.",
+            "homepage": "https://www.infinityloop.dev/",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator-nette/issues",
+                "source": "https://github.com/graphpql/graphpinator-nette/tree/v1.4"
+            },
+            "time": "2024-03-16T15:23:41+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator-parser",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator-parser.git",
+                "reference": "760e1473312c2933ffee68fccef2b96c902597b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-parser/zipball/760e1473312c2933ffee68fccef2b96c902597b6",
+                "reference": "760e1473312c2933ffee68fccef2b96c902597b6",
+                "shasum": ""
+            },
+            "require": {
+                "infinityloop-dev/graphpinator-common": "^2.0",
+                "infinityloop-dev/graphpinator-tokenizer": "^1.2",
+                "infinityloop-dev/utils": "^2.0",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\Parser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Parser subproject for GraPHPinator: GraphQL server implementation for PHP.",
+            "homepage": "https://github.com/graphpql",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator-parser/issues",
+                "source": "https://github.com/graphpql/graphpinator-parser/tree/v1.2"
+            },
+            "time": "2023-11-10T14:47:00+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator-printer",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator-printer.git",
+                "reference": "665df6d685aaadd349b38e46c2d1458540151b86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-printer/zipball/665df6d685aaadd349b38e46c2d1458540151b86",
+                "reference": "665df6d685aaadd349b38e46c2d1458540151b86",
+                "shasum": ""
+            },
+            "require": {
+                "infinityloop-dev/graphpinator": "^1.4"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\Printer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Schema printing visitor for GraPHPinator typesystem.",
+            "homepage": "https://github.com/graphpql/",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator-printer/issues",
+                "source": "https://github.com/graphpql/graphpinator-printer/tree/v1.2.3"
+            },
+            "time": "2023-11-10T13:05:18+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator-source",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator-source.git",
+                "reference": "d0a2429560f3e110d03e2ff0c123373a1b779be2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-source/zipball/d0a2429560f3e110d03e2ff0c123373a1b779be2",
+                "reference": "d0a2429560f3e110d03e2ff0c123373a1b779be2",
+                "shasum": ""
+            },
+            "require": {
+                "infinityloop-dev/graphpinator-common": "^2.0",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\Source\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Source subproject for GraPHPinator: GraphQL server implementation for PHP.",
+            "homepage": "https://www.infinityloop.dev/",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator-source/issues",
+                "source": "https://github.com/graphpql/graphpinator-source/tree/v1.1"
+            },
+            "time": "2023-11-10T13:14:05+00:00"
+        },
+        {
+            "name": "infinityloop-dev/graphpinator-tokenizer",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/graphpinator-tokenizer.git",
+                "reference": "20af497ce3fd89b43bfbe993107c4b481576cb3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-tokenizer/zipball/20af497ce3fd89b43bfbe993107c4b481576cb3d",
+                "reference": "20af497ce3fd89b43bfbe993107c4b481576cb3d",
+                "shasum": ""
+            },
+            "require": {
+                "infinityloop-dev/graphpinator-common": "^2.0",
+                "infinityloop-dev/graphpinator-source": "^1.0",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphpinator\\Tokenizer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Tokenizer subproject for GraPHPinator: GraphQL server implementation for PHP.",
+            "homepage": "https://www.infinityloop.dev/",
+            "support": {
+                "issues": "https://github.com/graphpql/graphpinator-tokenizer/issues",
+                "source": "https://github.com/graphpql/graphpinator-tokenizer/tree/v1.2"
+            },
+            "time": "2023-11-10T13:55:56+00:00"
+        },
+        {
+            "name": "infinityloop-dev/utils",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphpql/utils.git",
+                "reference": "88d67d3f86013d9a1e1694f21444235e489af005"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphpql/utils/zipball/88d67d3f86013d9a1e1694f21444235e489af005",
+                "reference": "88d67d3f86013d9a1e1694f21444235e489af005",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "infinityloop-dev/coding-standard": "^0.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Infinityloop\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Václav Pelíšek",
+                    "homepage": "https://www.peldax.com"
+                }
+            ],
+            "description": "Common utils for infinityloop packages.",
+            "homepage": "https://www.infinityloop.dev/",
+            "support": {
+                "issues": "https://github.com/graphpql/utils/issues",
+                "source": "https://github.com/graphpql/utils/tree/v2.3.1"
+            },
+            "time": "2024-03-16T14:35:34+00:00"
+        },
         {
             "name": "latte/latte",
             "version": "v3.0.14",
@@ -398,81 +1106,6 @@
                 "source": "https://github.com/nette/component-model/tree/v3.1.0"
             },
             "time": "2024-02-08T20:25:40+00:00"
-        },
-        {
-            "name": "nette/database",
-            "version": "v3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/database.git",
-                "reference": "39f98a8c5a0e67d30424ca199e0630b678bcecd5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/database/zipball/39f98a8c5a0e67d30424ca199e0630b678bcecd5",
-                "reference": "39f98a8c5a0e67d30424ca199e0630b678bcecd5",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pdo": "*",
-                "nette/caching": "^3.2",
-                "nette/utils": "^4.0",
-                "php": "8.1 - 8.3"
-            },
-            "require-dev": {
-                "jetbrains/phpstorm-attributes": "^1.0",
-                "mockery/mockery": "^1.6",
-                "nette/di": "^3.1",
-                "nette/tester": "^2.5",
-                "phpstan/phpstan-nette": "^1.0",
-                "tracy/tracy": "^2.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0-only",
-                "GPL-3.0-only"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "https://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "https://nette.org/contributors"
-                }
-            ],
-            "description": "💾 Nette Database: layer with a familiar PDO-like API but much more powerful. Building queries, advanced joins, drivers for MySQL, PostgreSQL, SQLite, MS SQL Server and Oracle.",
-            "homepage": "https://nette.org",
-            "keywords": [
-                "database",
-                "mssql",
-                "mysql",
-                "nette",
-                "notorm",
-                "oracle",
-                "pdo",
-                "postgresql",
-                "queries",
-                "sqlite"
-            ],
-            "support": {
-                "issues": "https://github.com/nette/database/issues",
-                "source": "https://github.com/nette/database/tree/v3.2.0"
-            },
-            "time": "2023-12-14T20:00:58+00:00"
         },
         {
             "name": "nette/di",
@@ -1260,6 +1893,259 @@
             "time": "2024-01-17T16:50:36+00:00"
         },
         {
+            "name": "psr/http-factory",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/e616d01114759c4c489f93b099585439f795fe35",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/1.0.2"
+            },
+            "time": "2023-04-10T20:10:41+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
+            },
+            "time": "2023-04-04T09:54:51+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.0"
+            },
+            "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
+            },
+            "time": "2021-10-29T13:26:27+00:00"
+        },
+        {
+            "name": "ralouphie/getallheaders",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
+            "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
             "name": "tracy/tracy",
             "version": "v2.10.5",
             "source": {
@@ -1482,5 +2368,5 @@
         "php": ">= 8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

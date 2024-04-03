@@ -1,9 +1,43 @@
 services:
 	- App\Router\RouterFactory::createRouter
 
+	# Register a NetteCache adapter
+	- Graphpinator\Nette\NetteCache
+
+	# Register a ExtraTypes
+	- Graphpinator\ExtraTypes\EmailAddressType
+	- Graphpinator\ExtraTypes\PhoneNumberType
+
+	# The SimpleContainer is a container of GraphQL types
+	# It is automatically injected by all types and directives as Nette automatically detects a typehint in SimpleContainers contructor
+	- Graphpinator\SimpleContainer()
+
+	# Register a Schema
+	- Graphpinator\Typesystem\Schema(
+		@Graphpinator\SimpleContainer, # Container of types
+		@App\GraphQL\Types\Query, # Query type
+		@App\GraphQL\Types\Mutation, # Mutation type
+		null # Subscription type
+	)
+
+	# Register a GraphiQl presenter
+	# - Graphpinator\Nette\GraphiQlPresenter(':Home:default')
+
+extensions:
+	dibi: Dibi\Bridges\Nette\DibiExtension22
 
 search:
-	-	in: %appDir%
+	model:
+		in: %appDir%
 		classes:
-			- *Factory
-			- *Facade
+			- *Repository
+	graphql:
+		in: '%appDir%/GraphQL'
+		extends:
+			- Graphpinator\Typesystem\Contract\NamedType
+			- Graphpinator\Typesystem\Contract\Directive
+
+	mutation:
+		in: '%appDir%/GraphQL'
+		classes:
+			- *Mutation

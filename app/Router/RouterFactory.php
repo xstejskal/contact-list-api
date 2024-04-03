@@ -15,7 +15,23 @@ final class RouterFactory
 	public static function createRouter(): RouteList
 	{
 		$router = new RouteList;
+
+        $router->addRoute('/schema.graphql', [
+            'module' => 'Graphpinator',
+            'presenter' => 'Schema',
+            'action' => 'html',
+        ]);
+
+        /*
+        $router->addRoute('/graphiql', [
+            'module' => 'Graphpinator',
+            'presenter' => 'GraphiQl',
+            'action' => 'default',
+        ]);
+        */
+
 		$router->addRoute('<presenter>/<action>[/<id>]', 'Home:default');
+
 		return $router;
 	}
 }

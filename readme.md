@@ -1,52 +1,36 @@
-Nette Web Project
+Contact List API
 =================
+GraphQL API je vytvořeno z [Nette Web Project](https://github.com/nette/web-project).
 
-Welcome to the Nette Web Project! This is a basic skeleton application built using
-[Nette](https://nette.org), ideal for kick-starting your new web projects.
+Aplikace obsahuje jednoduchý databázový model nad knihovnou [dibi](https://dibiphp.com/). 
 
-Nette is a renowned PHP web development framework, celebrated for its user-friendliness,
-robust security, and outstanding performance. It's among the safest choices
-for PHP frameworks out there.
+Pro implementaci GraphQL serveru je použita knihovna [graphpinator](https://github.com/graphpql/graphpinator).
 
-If Nette helps you, consider supporting it by [making a donation](https://nette.org/donate).
-Thank you for your generosity!
-
-
-Requirements
+Požadavky
 ------------
+https://github.com/nette/web-project?tab=readme-ov-file#requirements
 
-This Web Project is compatible with Nette 3.2 and requires PHP 8.1.
 
-
-Installation
+Instalace
 ------------
+Po naklonování repozitáře je potřeba nainstalovat závislosti pomocí Composeru.
 
-To install the Web Project, Composer is the recommended tool. If you're new to Composer,
-follow [these instructions](https://doc.nette.org/composer). Then, run:
+    composer install
 
-	composer create-project nette/web-project path/to/install
-	cd path/to/install
+Ujistěte se, že do adresářů `temp/` a `log/` lze zapisovat.
 
-Ensure the `temp/` and `log/` directories are writable.
+SQL dump pro vytvoření databáze (použitá MariaDB) je v souboru `db/schema.sql`
 
+V souboru `config/common.neon` je potřeba nastavit údaje pro připojení k databázi.
 
-Web Server Setup
+Nastavení Web Serveru
 ----------------
+https://github.com/nette/web-project?tab=readme-ov-file#web-server-setup
 
-To quickly dive in, use PHP's built-in server:
-
-	php -S localhost:8000 -t www
-
-Then, open `http://localhost:8000` in your browser to view the welcome page.
-
-For Apache or Nginx users, configure a virtual host pointing to your project's `www/` directory.
-
-**Important Note:** Ensure `app/`, `config/`, `log/`, and `temp/` directories are not web-accessible.
-Refer to [security warning](https://nette.org/security-warning) for more details.
-
-
-Minimal Skeleton
+Použití
 ----------------
+API endpoint je dostupný na adrese `http://<HOST>/`
 
-For demonstrating issues or similar tasks, rather than starting a new project, use
-this [minimal skeleton](https://github.com/nette/web-project/tree/minimal).
+Schéma je dostupné na adrese `http://<HOST>/schema.graphql`
+
+Na adrese `http://<HOST>/docs/` je dostupná vygenerovaná dokumentace s ukázkami volání.

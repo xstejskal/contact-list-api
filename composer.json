@@ -9,7 +9,6 @@
 		"nette/application": "^3.2.1",
 		"nette/bootstrap": "^3.2",
 		"nette/caching": "^3.2",
-		"nette/database": "^3.2",
 		"nette/di": "^3.2",
 		"nette/forms": "^3.2",
 		"nette/http": "^3.3",
@@ -18,7 +17,11 @@
 		"nette/security": "^3.2",
 		"nette/utils": "^4.0",
 		"latte/latte": "^3.0",
-		"tracy/tracy": "^2.10"
+		"tracy/tracy": "^2.10",
+		"infinityloop-dev/graphpinator": "^1.7",
+		"infinityloop-dev/graphpinator-nette": "^1.4",
+		"dibi/dibi": "^5.0",
+		"infinityloop-dev/graphpinator-extra-types": "^1.7"
 	},
 	"require-dev": {
 		"nette/tester": "^2.5",
