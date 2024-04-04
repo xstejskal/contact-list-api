@@ -16,7 +16,7 @@ final class UpdateContactOutput extends UnionType
 
     public function __construct(
         private UpdateContactSuccessType $updateContactSuccessType,
-        private UpdateContactErrorType $updateContactErrorType,
+        UpdateContactErrorType $updateContactErrorType,
     )
     {
         parent::__construct(new TypeSet([

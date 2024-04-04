@@ -22,13 +22,11 @@ final class RouterFactory
             'action' => 'html',
         ]);
 
-        /*
         $router->addRoute('/graphiql', [
             'module' => 'Graphpinator',
             'presenter' => 'GraphiQl',
             'action' => 'default',
         ]);
-        */
 
 		$router->addRoute('<presenter>/<action>[/<id>]', 'Home:default');
 

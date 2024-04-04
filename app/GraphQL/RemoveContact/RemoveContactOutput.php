@@ -14,8 +14,8 @@ final class RemoveContactOutput extends UnionType
     protected const NAME = 'RemoveContactOutput';
 
     public function __construct(
-        private RemoveContactConfirmType $removeContactConfirmType,
-        private RemoveContactErrorType $removeContactErrorType,
+        RemoveContactConfirmType $removeContactConfirmType,
+        RemoveContactErrorType $removeContactErrorType,
     )
     {
         parent::__construct(new TypeSet([
