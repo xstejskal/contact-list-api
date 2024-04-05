@@ -413,16 +413,16 @@
         },
         {
             "name": "infinityloop-dev/graphpinator-nette",
-            "version": "v1.4",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/graphpql/graphpinator-nette.git",
-                "reference": "2f95e2ecbf55bf8141ad828d56aeb62fb6fe4c88"
+                "reference": "839742d422e94995f6073b487ceab7160c430791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/graphpql/graphpinator-nette/zipball/2f95e2ecbf55bf8141ad828d56aeb62fb6fe4c88",
-                "reference": "2f95e2ecbf55bf8141ad828d56aeb62fb6fe4c88",
+                "url": "https://api.github.com/repos/graphpql/graphpinator-nette/zipball/839742d422e94995f6073b487ceab7160c430791",
+                "reference": "839742d422e94995f6073b487ceab7160c430791",
                 "shasum": ""
             },
             "require": {
@@ -461,12 +461,12 @@
                 }
             ],
             "description": "Graphpinator adapters and addons for Nette framework.",
-            "homepage": "https://www.infinityloop.dev/",
+            "homepage": "https://github.com/graphpql",
             "support": {
                 "issues": "https://github.com/graphpql/graphpinator-nette/issues",
-                "source": "https://github.com/graphpql/graphpinator-nette/tree/v1.4"
+                "source": "https://github.com/graphpql/graphpinator-nette/tree/v1.4.1"
             },
-            "time": "2024-03-16T15:23:41+00:00"
+            "time": "2024-04-04T10:00:26+00:00"
         },
         {
             "name": "infinityloop-dev/graphpinator-parser",
@@ -1181,16 +1181,16 @@
         },
         {
             "name": "nette/forms",
-            "version": "v3.2.1",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "88c1ffb717cedd40f7c7bcaf04e40ed02264ee98"
+                "reference": "a20fdb1f81f5b406cdc99a450e0a327d5790f9b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/88c1ffb717cedd40f7c7bcaf04e40ed02264ee98",
-                "reference": "88c1ffb717cedd40f7c7bcaf04e40ed02264ee98",
+                "url": "https://api.github.com/repos/nette/forms/zipball/a20fdb1f81f5b406cdc99a450e0a327d5790f9b5",
+                "reference": "a20fdb1f81f5b406cdc99a450e0a327d5790f9b5",
                 "shasum": ""
             },
             "require": {
@@ -1252,9 +1252,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/forms/issues",
-                "source": "https://github.com/nette/forms/tree/v3.2.1"
+                "source": "https://github.com/nette/forms/tree/v3.2.2"
             },
-            "time": "2024-03-06T10:01:29+00:00"
+            "time": "2024-04-01T01:05:00+00:00"
         },
         {
             "name": "nette/http",
@@ -2147,16 +2147,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.10.5",
+            "version": "v2.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "86bdba4aa0f707d3f125933931d3df6e5c7aad79"
+                "reference": "64435e3d5d5e3172e48c026b6b57349d49cbfd49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/86bdba4aa0f707d3f125933931d3df6e5c7aad79",
-                "reference": "86bdba4aa0f707d3f125933931d3df6e5c7aad79",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/64435e3d5d5e3172e48c026b6b57349d49cbfd49",
+                "reference": "64435e3d5d5e3172e48c026b6b57349d49cbfd49",
                 "shasum": ""
             },
             "require": {
@@ -2216,9 +2216,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tracy/issues",
-                "source": "https://github.com/nette/tracy/tree/v2.10.5"
+                "source": "https://github.com/nette/tracy/tree/v2.10.6"
             },
-            "time": "2023-10-16T21:54:18+00:00"
+            "time": "2024-03-31T17:03:25+00:00"
         }
     ],
     "packages-dev": [

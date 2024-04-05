@@ -21,7 +21,7 @@ services:
 	)
 
 	# Register a GraphiQl presenter
-	# - Graphpinator\Nette\GraphiQlPresenter(':Home:default')
+	- Graphpinator\Nette\GraphiQlPresenter(':Home:default')
 
 extensions:
 	dibi: Dibi\Bridges\Nette\DibiExtension22

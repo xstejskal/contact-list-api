@@ -9,13 +9,10 @@ use App\GraphQL\Types\OutputErrorType;
 use App\GraphQL\Types\UpdateContactInput;
 use App\GraphQL\Types\UpdateContactOutput;
 use App\Model\ContactRepository;
-use App\ORM\Repository\DivisionRepository;
-use App\ORM\Repository\ProductRepository;
 use Dibi\Row;
 use Graphpinator\Typesystem\Argument\Argument;
 use Graphpinator\Typesystem\Argument\ArgumentSet;
 use Graphpinator\Typesystem\Field\ResolvableField;
-use LeanMapper\Entity;
 
 class UpdateContactMutation
 {

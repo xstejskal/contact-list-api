@@ -34,3 +34,5 @@ API endpoint je dostupný na adrese `http://<HOST>/`
 Schéma je dostupné na adrese `http://<HOST>/schema.graphql`
 
 Na adrese `http://<HOST>/docs/` je dostupná vygenerovaná dokumentace s ukázkami volání.
+
+Na adrese `http://<HOST>/graphiql` je dostupné "hříště" pro testování dotazů na API.

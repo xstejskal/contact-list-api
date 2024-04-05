@@ -9,7 +9,6 @@ use App\GraphQL\Types\OutputErrorType;
 use App\GraphQL\Types\RemoveContactInput;
 use App\GraphQL\Types\RemoveContactOutput;
 use App\Model\ContactRepository;
-use App\ORM\Repository\DivisionRepository;
 use Graphpinator\Typesystem\Argument\Argument;
 use Graphpinator\Typesystem\Argument\ArgumentSet;
 use Graphpinator\Typesystem\Field\ResolvableField;
